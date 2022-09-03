@@ -52,9 +52,12 @@
             </nav>
             <hr>
         </section>
+    </header>
+    <!-- main section -->
+    <main>
         <section class="container">
             <!-- navbar 02 -->
-            <ul class="nav justify-content-center">
+            <ul class="nav justify-content-around mb-4">
                 <li class="nav-item">
                     <a class="nav-link fs-6 fw-semibold text-dark" aria-current="page" href="#">Home</a>
                 </li>
@@ -83,12 +86,34 @@
                     <a class="nav-link fs-6 fw-semibold text-dark" href="#">All news</a>
                 </li>
             </ul>
-        </section>
-    </header>
-    <!-- main section -->
-    <main>
-        <section>
+            <!-- Search History Card -->
+            <div class="card shadow-lg fw-semibold border-0 mb-4">
+                <div class="card-body">
+                    4 items found for category Entertainment
+                </div>
+            </div>
+            <!-- Sort Part -->
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="d-flex align-items-center">
+                    <span class="fw-bold pe-2">Sort By View:</span>
+                    <div class="dropdown">
+                        <a class="btn btn-light shadow-lg fw-semibold border-0 dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Default
+                        </a>
 
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Today's Post</a></li>
+                            <li><a class="dropdown-item" href="#">Recent Post</a></li>
+                            <li><a class="dropdown-item" href="#">Most Popular Post</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <a class="btn btn-primary fw-semibold" href="#" role="button">Today's Pick</a>
+                    <a class="btn btn-outline-primary fw-semibold" href="#" role="button">Trending</a>
+                </div>
+            </div>
         </section>
     </main>
     <!-- Footer Section -->
