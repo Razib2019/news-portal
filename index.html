@@ -57,34 +57,8 @@
     <main>
         <section class="container">
             <!-- navbar 02 -->
-            <ul class="nav justify-content-around mb-4">
-                <li class="nav-item">
-                    <a class="nav-link fs-6 fw-semibold text-dark" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 fw-semibold text-dark" href="#">Breaking news</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 fw-semibold text-dark" href="#">Regular news</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 fw-semibold text-dark" href="#">International news</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 fw-semibold text-dark" href="#">Sports</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 fw-semibold active" href="#">Entertainment</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 fw-semibold text-dark" href="#">Culture</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 fw-semibold text-dark" href="#">Arts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fs-6 fw-semibold text-dark" href="#">All news</a>
-                </li>
+            <ul id="categories-container" class="nav justify-content-around mb-4">
+
             </ul>
             <!-- Search History Card -->
             <div class="card shadow-lg fw-semibold border-0 mb-4">
@@ -116,103 +90,12 @@
             </div>
         </section>
         <!-- Card Section -->
-        <section class="container mt-4" id="deals">
-            <!-- card 01 -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-5">
-                        <img src="./images/image 1.svg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-7 d-flex align-items-center ">
-                        <div class="card-body">
-                            <h4 class="card-title fw-bold">The best fashion influencers to follow for sartorial
-                                inspiration</h4>
-                            <p class="card-text">TFrom our favourite UK influencers to the best missives from Milan
-                                and the coolest New Yorkers, read on some of the best fashion blogs out there, and
-                                for even more inspiration, do head to our separate black fashion influencer
-                                round-up.
-                            </p>
-                            <div class="row g-2">
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="p-3 ">
-                                        <div class=" d-flex">
-                                            <img class="img-fluid" src="./images/Rectangle 19.svg" alt="">
-                                            <div class="ps-3">
-                                                <h6>Awlad Hossain</h4>
-                                                    <p>UI Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="p-3">
-                                        <div class=" text-center">
-                                            <p><span><i class="fa-regular fa-eye pe-2"></i></span>1.5M</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="p-3">
-                                        <div class=" text-center">
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- card 02 -->
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-5">
-                        <img src="./images/image 1.svg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-7 d-flex align-items-center ">
-                        <div class="card-body">
-                            <h4 class="card-title fw-bold">The best fashion influencers to follow for sartorial
-                                inspiration</h4>
-                            <p class="card-text">TFrom our favourite UK influencers to the best missives from Milan
-                                and the coolest New Yorkers, read on some of the best fashion blogs out there, and
-                                for even more inspiration, do head to our separate black fashion influencer
-                                round-up.
-                            </p>
-                            <div class="row g-2">
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="p-3 ">
-                                        <div class=" d-flex">
-                                            <img class="img-fluid" src="./images/Rectangle 19.svg" alt="">
-                                            <div class="ps-3">
-                                                <h6>Awlad Hossain</h4>
-                                                    <p>UI Designer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="p-3">
-                                        <div class=" text-center">
-                                            <p><span><i class="fa-regular fa-eye pe-2"></i></span>1.5M</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="p-3">
-                                        <div class=" text-center">
-                                            <span><i class="fa-solid fa-arrow-right"></i></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id="news-container" class="container mt-4" id="deals">
+            <!-- News card -->
         </section>
     </main>
     <!-- Footer Section -->
-    <footer class="shadow-lg p-3 bg-body text-dark">
+    <footer class="shadow-lg p-2 bg-body text-dark fixed-bottom mt-5">
         <p class="text-center fw-semibold">Copyright 2021 BDNews24.com</p>
     </footer>
     <!-- Bootstrap Script Link -->
@@ -220,7 +103,7 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <!-- My Created Script Link -->
-    <script src=""></script>
+    <script src="./js/newsCategories.js"></script>
 </body>
 
 </html>
