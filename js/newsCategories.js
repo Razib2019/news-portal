@@ -60,7 +60,7 @@ const displayCategoryDetails = categories => {
                                 <div class="col-lg-4 col-md-6 col-sm-6">
                                     <div class="p-3">
                                         <div>
-                                            <a onclick="loadNewsDetails('${category._id}')" href="#"><span><i class="fa-solid fa-arrow-right"></i></span></a>
+                                            <a onclick="loadNewsDetails('${category._id}')" href="#"><span><i class="fa-solid fa-arrow-right" data-bs-toggle="modal" data-bs-target="#newsDetailsModal"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
