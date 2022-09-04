@@ -26,6 +26,13 @@ const loadCategoryDetails = (category_id) => {
 }
 
 const displayCategoryDetails = categories => {
+    // console.log(categories);
+    const totalItemFound = document.getElementById('totalItemFound');
+    const itemsDiv = document.createElement('div');
+    itemsDiv.classList.add = ('card-body');
+    totalItemFound.innerHTML = `
+        <span class="p-2">${categories.length} items found </span>
+    `;
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = '';
     categories.forEach(category => {
@@ -86,7 +93,7 @@ const loadNewsDetails = (newsId) => {
 }
 
 const displayNewsDetails = news => {
-    console.log(news);
+    // console.log(news);
     const modalTitle = document.getElementById('newsDetailsModalLabel');
     modalTitle.innerText = news.title;
     const newsDetails = document.getElementById('news-details');
