@@ -2,6 +2,7 @@ const loadCategories = () => {
     fetch('https://openapi.programming-hero.com/api/news/categories')
         .then(res => res.json())
         .then(data => displayCategories(data.data.news_category))
+        .catch(error => console.log(error))
 }
 
 const displayCategories = categories => {
@@ -21,6 +22,7 @@ const loadCategoryDetails = (category_id) => {
     fetch(url)
         .then(res => res.json())
         .then(data => displayCategoryDetails(data.data))
+        .catch(error => console.log(error))
 }
 
 const displayCategoryDetails = categories => {
@@ -80,10 +82,22 @@ const loadNewsDetails = (newsId) => {
     fetch(url)
         .then(res => res.json())
         .then(data => displayNewsDetails(data.data[0]))
+        .catch(error => console.log(error))
 }
 
 const displayNewsDetails = news => {
-
+    console.log(news);
+    const modalTitle = document.getElementById('newsDetailsModalLabel');
+    modalTitle.innerText = news.title;
+    const newsDetails = document.getElementById('news-details');
+    newsDetails.innerHTML = `
+    <div class="text-center">
+    <img class="pb-2" src="${news.thumbnail_url}" alt="">
+    <p>Author Name: ${news.author.name ? news.author.name : 'No Author Name Found'}</p>
+    <p>Published Data: ${news.author.published_date ? news.author.published_date : 'No Published Date Found'}</p>
+    <p>Total View: ${news.total_view ? news.total_view : 'Total View Not Found'}</p>
+    </div>
+    `;
 }
 
 loadCategories();
