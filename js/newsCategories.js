@@ -95,6 +95,7 @@ const displayNewsDetails = news => {
     <img class="pb-2" src="${news.thumbnail_url}" alt="">
     <p>Author Name: ${news.author.name ? news.author.name : 'No Author Name Found'}</p>
     <p>Published Data: ${news.author.published_date ? news.author.published_date : 'No Published Date Found'}</p>
+    <p><span>Badge: ${news.rating.badge ? news.rating.badge : 'No Badge Found'}</span> || <span>Rating: ${news.rating.number ? news.rating.number : 'No Rating Found'}</span></p>
     <p>Total View: ${news.total_view ? news.total_view : 'Total View Not Found'}</p>
     </div>
     `;
